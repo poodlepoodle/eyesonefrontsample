@@ -38,7 +38,7 @@ class DefaultLayout extends Component {
       <div className="app">
         <AppHeader fixed className="border-0 header-sizeup">
           <Suspense  fallback={this.loading()}>
-            <DefaultHeader onLogout={e=>this.signOut(e)}/>
+            <DefaultHeader onLogout={e=>this.signOut(e)} className="header_shadow_styles"/>
           </Suspense>
         </AppHeader>
         <div className="app-body">
@@ -72,11 +72,6 @@ class DefaultLayout extends Component {
             </Container>
           </main>
         </div>
-        <AppFooter>
-          <Suspense fallback={this.loading()}>
-            <DefaultFooter />
-          </Suspense>
-        </AppFooter>
       </div>
     );
   }

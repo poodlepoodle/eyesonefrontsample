@@ -4,14 +4,14 @@ class Typography extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <div className="card">
+        <div className="card border-0 card-shadow-styles">
           <div className="card-body special_card">
             <p className="special_card_text"><strong className="special_card_text_number">'파리바게뜨 갤러리아 팰리스점'</strong> 에 대한 신규상품 추천입니다.</p>
           </div>
         </div>
         <div className="row">
           <div className="col-4">
-            <div className="card">
+            <div className="card border-0 card-shadow-styles">
               <div className="custom-card-header">
                 신규 상품 추천
               </div>
@@ -23,7 +23,7 @@ class Typography extends Component {
                 </row>
               </div>
             </div>
-            <div className="card">
+            <div className="card border-0 card-shadow-styles">
               <div className="custom-card-header">
                 키워드 추출
               </div>
@@ -33,7 +33,7 @@ class Typography extends Component {
             </div>
           </div>
           <div className="col-8">
-            <div className="card">
+            <div className="card border-0 card-shadow-styles">
               <div className="custom-card-header">
                 트렌드 리포트 결과
               </div>

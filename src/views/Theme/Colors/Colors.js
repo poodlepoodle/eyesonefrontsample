@@ -4,56 +4,56 @@ class Colors extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <div className="card">
+        <div className="card border-0 card-shadow-styles">
           <div className="card-body special_card">
             <p className="special_card_text">이번 달 사장님의 <strong className="special_card_text_number">3월</strong> 예상 매출액은 <strong className="special_card_text_number">5,489,129</strong> 원 입니다.</p>
           </div>
         </div>
 
-        <div className="card">
+        <div className="card border-0 card-shadow-styles">
           <div className="custom-card-header">
             희망 예측 기간 조회
           </div>
-        <div className="card-body">
-            
-        <tbody>
-          <tr>
-            <td>
-              <div class="dropdown custom-dropdown-style mb-3">
-                <a class="btn btn-secondary dropdown-toggle" role="button" id="sample_dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  2020    
-                </a>
-                <div class="dropdown-menu" aria-labelledby="sample_dropdownMenuLink">
-                  <a class="dropdown-item" href="#">2020</a>
-                  <a class="dropdown-item" href="#">2019</a>
-                  <a class="dropdown-item" href="#">2018</a>
+          <div className="card-body">
+              
+          <tbody>
+            <tr>
+              <td>
+                <div class="dropdown custom-dropdown-style mb-3">
+                  <a class="btn btn-secondary dropdown-toggle" role="button" id="sample_dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    2020    
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="sample_dropdownMenuLink">
+                    <a class="dropdown-item" href="#">2020</a>
+                    <a class="dropdown-item" href="#">2019</a>
+                    <a class="dropdown-item" href="#">2018</a>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-01-01" />
-              </div>
-            </td>
-            <div className="wavearrow mt-2">~</div>
-            <td>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-02-02" />
-              </div>
-            </td>
-            <td>
-              <button type="button" class="btn btn-primary mb-3 custom-button-marginstyle">예측하기</button>
-            </td>
-            <td><div></div></td>
-            <td><div></div></td>
-          </tr>
-        </tbody>
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-01-01" />
+                </div>
+              </td>
+              <div className="wavearrow mt-2">~</div>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-02-02" />
+                </div>
+              </td>
+              <td>
+                <button type="button" class="btn btn-primary mb-3 custom-button-marginstyle">예측하기</button>
+              </td>
+              <td><div></div></td>
+              <td><div></div></td>
+            </tr>
+          </tbody>
           </div>
         </div>
 
         <div class="row">
           <div class="col-4">
-            <div className="card">
+            <div className="card border-0 card-shadow-styles">
               <div className="custom-card-header">
                 지역설명
               </div>
@@ -75,7 +75,7 @@ class Colors extends Component {
           </div>
 
           <div class="col-8">
-            <div className="card">
+            <div className="card border-0 card-shadow-styles">
               <tr>
                 <td>
                   <div className="custom-card-header">
