@@ -10,6 +10,10 @@
     font-size: 30;
 }
 
+.uppermarginblock {
+    margin-top: 4%;
+}
+
 .ftstyle_title {
     font-size : 20;
     font-weight : 800;
@@ -36,3 +40,117 @@
     margin : 0px;
     background-color: white;
 }
+
+.special_card {
+    justify-content: center;
+    align-items: center;
+}
+
+.special_card_text {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.special_card_text_number {
+    display: inline-block;
+    margin-bottom: -10px;
+    font-size: 35px;
+    font-weight: 800;
+    border-bottom: 10px solid #6ceac6;
+}
+
+.custom-card-header {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #526378;
+}
+
+.custom-dropdown-style {
+    //color : white;
+    margin-right : 20px;
+}
+
+.wavearrow {
+    font-size: 50;
+    margin-left : 20px;
+    margin-right:  20px;
+}
+
+.custom-button-marginstyle {
+    margin-left : 20px;
+}
+
+.custom_listitem_titlefont {
+    font-size: 20px;
+    font-weight: 800;
+    color: #526378;
+}
+
+.custom_listitem_contentfont {
+    font-size: 15px;
+    font-weight: 400;
+    color: #526378;
+}
+
+.dashboard_mini {
+    margin: 10px 30px 10px 30px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 250px;
+    background-color: #EAECEE;
+}
+
+.dashboard_mini_text {
+    font-size: 200;
+    font-weight: 600;
+    color : white;
+}
+
+.img_custom_box {
+    margin-left: 400px;
+    width : 120px;
+    height : auto;
+}
+
+.img_setting_styles {
+    margin : 10px 10px 70px 10px;
+
+}
+
+.resultbox {
+    height : 750px;
+}
+
+.empty-custom-box {
+    height : 230px;
+}
+
+.tight_box {
+    height : 350px;
+    width : auto;
+}
+
+.long_box {
+    height : 450px;
+}
+
+.same_box {
+    margin-left : 22px;
+    height : 100px;
+    width : auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

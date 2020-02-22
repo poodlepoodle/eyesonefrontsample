@@ -1,181 +1,132 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import classNames from 'classnames';
-import { Row, Col } from 'reactstrap'
-import { rgbToHex } from '@coreui/coreui/dist/js/coreui-utilities'
-
-class ThemeView extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      bgColor: 'rgb(255, 255, 255)'
-    }
-  }
-
-  componentDidMount () {
-    const elem = ReactDOM.findDOMNode(this).parentNode.firstChild
-    const color = window.getComputedStyle(elem).getPropertyValue('background-color')
-    this.setState({
-      bgColor: color || this.state.bgColor
-    })
-  }
-
-  render() {
-
-    return (
-      <table className="w-100">
-        <tbody>
-        <tr>
-          <td className="text-muted">HEX:</td>
-          <td className="font-weight-bold">{ rgbToHex(this.state.bgColor) }</td>
-        </tr>
-        <tr>
-          <td className="text-muted">RGB:</td>
-          <td className="font-weight-bold">{ this.state.bgColor }</td>
-        </tr>
-        </tbody>
-      </table>
-    )
-  }
-}
-
-class ThemeColor extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-  render() {
-
-    // const { className, children, ...attributes } = this.props
-    const { className, children } = this.props
-
-    const classes = classNames(className, 'theme-color w-75 rounded mb-3')
-
-    return (
-      <Col xl="2" md="4" sm="6" xs="12" className="mb-4">
-        <div className={classes} style={{paddingTop: '75%'}}></div>
-        {children}
-        <ThemeView/>
-      </Col>
-    )
-  }
-}
 
 class Colors extends Component {
   render() {
     return (
       <div className="animated fadeIn">
         <div className="card">
-          <div className="card-header">
-            <i className="icon-drop"></i> Theme colors
-          </div>
-          <div className="card-body">
-            <Row>
-              <ThemeColor className="bg-primary">
-                <h6>Brand Primary Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-secondary">
-                <h6>Brand Secondary Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-success">
-                <h6>Brand Success Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-danger">
-                <h6>Brand Danger Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-warning">
-                <h6>Brand Warning Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-info">
-                <h6>Brand Info Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-light">
-                <h6>Brand Light Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-dark">
-                <h6>Brand Dark Color</h6>
-              </ThemeColor>
-            </Row>
+          <div className="card-body special_card">
+            <p className="special_card_text">이번 달 사장님의 <strong className="special_card_text_number">3월</strong> 예상 매출액은 <strong className="special_card_text_number">5,489,129</strong> 원 입니다.</p>
           </div>
         </div>
+
         <div className="card">
-          <div className="card-header">
-            <i className="icon-drop"></i> Grays
+          <div className="custom-card-header">
+            희망 예측 기간 조회
           </div>
-          <div className="card-body">
-            <Row className="mb-3">
-              <ThemeColor className="bg-gray-100">
-                <h6>Gray 100 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-200">
-                <h6>Gray 200 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-300">
-                <h6>Gray 300 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-400">
-                <h6>Gray 400 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-500">
-                <h6>Gray 500 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-600">
-                <h6>Gray 600 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-700">
-                <h6>Gray 700 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-800">
-                <h6>Gray 800 Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-gray-900">
-                <h6>Gray 900 Color</h6>
-              </ThemeColor>
-            </Row>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-header">
-            <i className="icon-drop"></i> Additional colors
-          </div>
-          <div className="card-body">
-            <Row>
-              <ThemeColor className="bg-blue">
-                <h6>Blue Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-light-blue">
-                <h6>Light Blue Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-indigo">
-                <h6>Indigo Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-purple">
-                <h6>Purple Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-pink">
-                <h6>Pink Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-red">
-                <h6>Red Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-orange">
-                <h6>Orange Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-yellow">
-                <h6>Yellow Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-green">
-                <h6>Green Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-teal">
-                <h6>Teal Color</h6>
-              </ThemeColor>
-              <ThemeColor className="bg-cyan">
-                <h6>Cyan Color</h6>
-              </ThemeColor>
-            </Row>
+        <div className="card-body">
+            
+        <tbody>
+          <tr>
+            <td>
+              <div class="dropdown custom-dropdown-style mb-3">
+                <a class="btn btn-secondary dropdown-toggle" role="button" id="sample_dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  2020    
+                </a>
+                <div class="dropdown-menu" aria-labelledby="sample_dropdownMenuLink">
+                  <a class="dropdown-item" href="#">2020</a>
+                  <a class="dropdown-item" href="#">2019</a>
+                  <a class="dropdown-item" href="#">2018</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-01-01" />
+              </div>
+            </td>
+            <div className="wavearrow mt-2">~</div>
+            <td>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="2020-02-02" />
+              </div>
+            </td>
+            <td>
+              <button type="button" class="btn btn-primary mb-3 custom-button-marginstyle">예측하기</button>
+            </td>
+            <td><div></div></td>
+            <td><div></div></td>
+          </tr>
+        </tbody>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div className="card">
+              <div className="custom-card-header">
+                지역설명
+              </div>
+              <div className="card-body special_card">
+                <img src={'../../assets/img/map.png'} className="img-avatar"/>   
+              </div>
+              <div>
+                <div className="custom-card-header mb-3">
+                  상위 6개 지역
+                </div>
+                <div class="list-group">
+                  <a class="list-group-item list-group-item-action custom_listitem_contentfont">1. 서울특별시 송파구 잠실동</a>
+                  <a class="list-group-item list-group-item-action custom_listitem_contentfont">2. 서울특별시 송파구 석촌동</a>
+                  <a class="list-group-item list-group-item-action custom_listitem_contentfont">3. 서울특별시 송파구 가락1동</a>
+                  <a class="list-group-item list-group-item-action custom_listitem_contentfont">4. 서울특별시 송파구 문정동</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div className="card">
+              <tr>
+                <td>
+                  <div className="custom-card-header">
+                    상품 판매 예측 결과
+                  </div>
+                </td>
+                <td>
+                  <img src={'../../assets/img/excel_download.png'} className="img-avatar img_custom_box"/>
+                </td>
+              </tr>
+              <div className="card-body special_card">
+                <div className="dashboard_mini">
+                  <h1 className="dashboard_mini_text">대시보드 화면</h1>
+                </div>
+              </div>
+              <div className="custom-card-header mb-3">
+                상위 4개 상품목록
+              </div>
+
+              <div className="row">
+                <td className="col-2"></td>
+                <td className="col-2">
+                  <div className="img_setting_styles">
+                    <img src={'../../assets/img/mer_1.png'} className="img-avatar"/>
+                  </div>
+                </td>
+                <td className="col-2">
+                  <div className="img_setting_styles">
+                    <img src={'../../assets/img/mer_2.png'} className="img-avatar"/>
+                  </div>
+                </td>
+                <td className="col-2">
+                  <div className="img_setting_styles">
+                    <img src={'../../assets/img/mer_3.png'} className="img-avatar"/>
+                  </div>
+                </td>
+                <td className="col-2">
+                  <div className="img_setting_styles">
+                    <img src={'../../assets/img/mer_4.png'} className="img-avatar"/>
+                  </div>
+                </td>
+                <td className="col-2"></td>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     );
   }
