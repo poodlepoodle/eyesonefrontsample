@@ -1,0 +1,2 @@
+(this["webpackJsonp@coreui/coreui-free-react-admin-template"]=this["webpackJsonp@coreui/coreui-free-react-admin-template"]||[]).push([[37],{1084:function(e,t,a){"use strict";a.r(t);var n=a(224),c=a(225),r=a(227),i=a(226),u=a(228),o=a(4),s=a.n(o),p=function(e){function t(){return Object(n.a)(this,t),Object(r.a)(this,Object(i.a)(t).apply(this,arguments))}return Object(u.a)(t,e),Object(c.a)(t,[{key:"render",value:function(){return s.a.createElement("div",{className:"animated fadeIn"})}}]),t}(o.Component);t.default=p}}]);
+//# sourceMappingURL=37.89311923.chunk.js.map
